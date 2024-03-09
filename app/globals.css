@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,4 +25,36 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* styles/globals.css */
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+} */
+
+/* Ensure full height layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+
+/* Remove default margin for navigation items */
+nav a {
+  text-decoration: none;
+}
+
+/* Apply 'Righteous' font to the elements with the .righteous-regular class */
+.righteous-regular {
+  font-family: 'Righteous', system-ui, sans-serif;
+}
+
+/* If you want to apply it globally, you can target the body or specific elements */
+body {
+  font-family: 'Righteous', system-ui, sans-serif;
 }
